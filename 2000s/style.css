@@ -4,10 +4,11 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	outline: 5px solid red;
 }
 
 body {
-	background-color: yellow;
+	background-color: rgb(172, 188, 238);
 	font-family: sans-serif;
 }
 h1 {
