@@ -4,25 +4,114 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	outline: 5px solid red;
+	outline: 0px solid red;
+	position:relative;
+}
+
+nav{
+	font-family: serif;
+	font-size: 20px;
+	font-display: ;
 }
 
 body {
-	background-color: rgb(172, 188, 238);
+	background: url("assets/y2k.jpg");
+	background-color: rgb(5, 7, 119);
 	font-family: sans-serif;
+	cursor: url(assets/star-5pt-outline.png) 35 35, auto;
+	image-rendering: pixelated;
 }
+
+#disco{
+	position: absolute;
+	top: 98px;
+	rotate: -25deg;
+	height: 300px;
+	left: 170px;
+}
+#stars{
+	position: absolute;
+	top: 20px;
+	height: 500px;
+	left: 280px;
+	rotate:320deg ;
+	opacity: 95%;
+}
+
+#computer {
+	top: 30px;
+	height: 600px;
+	left: 80px;
+	outline: 10px ridge rgba(105, 128, 220, 0.642);
+}
+
+#y2k {
+	position: absolute;
+	top: 200px;
+	height: 90px;
+	left: 200px;
+}
+
+#heart {
+	position: absolute;
+	height: 260px;
+	top: 290px;
+	left: 450px;
+	rotate: 20deg;
+	opacity: 90%;
+}
+
+:root {
+	interpolate-size: allow-keywords;
+  }
+
+  section {
+	height: 8rem;
+	overflow: hidden;
+	transition: height ease 1s;
+	font-family:sans-serif;
+	color: rgb(2, 12, 93);
+  }
+  li {
+	margin: 20px;
+	list-style-type: "\1F929" ;
+  }
+  
+  section:hover,
+  section:focus {
+	height: max-content;
+  }
+
+  button {
+	background-color: rgb(255, 255, 255);
+	border: ridge 10px;
+	padding: 25px;
+	font-family: serif;
+	font-weight: bolder;
+	font-style: italic;
+	font-size-adjust: inherit;
+	outline: 10px ridge rgba(105, 128, 220, 0.642);
+	cursor: url(assets/star-blue.png) 30 30, pointer;
+	
+  }
+  button:hover{
+	transition-duration: 1s;
+	border: ridge 10px rgb(6, 29, 114);
+  }
+
 h1 {
 	margin: 20px;
+	font-family:cursive;
 }
 h2 {
+	font-size: 20px;
 	margin: 20px;
 }
-p {
-	margin: 20px;
-}
-ul {
-	margin: 20px;
-}
-li {
-	margin: 20px;
+
+div {
+	column-count: 3;
+	column-gap: 0px;
+	column-width: 100%;
+	left: 20px;
+
 }
