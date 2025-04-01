@@ -115,3 +115,15 @@ div {
 	left: 20px;
 
 }
+
+figcaption {
+	font-family: cursive;
+	text-align: center;
+	color: rgb(255, 0, 225);
+	font-weight: bolder;
+}
+
+em {
+	color: white;
+	
+}
