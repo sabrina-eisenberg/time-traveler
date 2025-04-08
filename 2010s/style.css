@@ -6,6 +6,43 @@
 	margin: 0;
 }
 
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgb(0, 0, 0);
+	padding: 5vh;
+	color: white;
+}
+
+iframe {
+	flex-grow: 4;
+	padding: 20px;
+	border: solid 10px;
+	border-color: white;
+	border-style:groove;
+}
+
+.albumCovers{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+img{
+	width: 250px;
+	padding: 10px;
+}
+
+
+
+
+
+
+
 @font-face {
 	font-family: "Limkin";
 	src: url("assets/TMT-LimkinVF.ttf");
@@ -14,7 +51,7 @@
 body {
 	font-family: "Limkin", serif;
 	font-variation-settings: "wght" 500, "SRFF" 100;
-	background: radial-gradient(circle, rgba(243,168,221,1) 0%, rgba(152,219,107,1) 20%, rgba(90,222,232,1) 40%, rgba(253,192,58,1) 60%, rgba(166,144,252,1) 80%, rgba(255,115,77,1) 100%);
+	background: white;
 	background-size: 100vw 100vh;
 }
 
