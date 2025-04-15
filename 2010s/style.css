@@ -6,50 +6,154 @@
 	margin: 0;
 }
 
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav a{
+	border: 2px solid;
+	padding: 10px ;
+	border-color: red;
+	color: red;
+	flex-grow: 3;
+	text-align: center;
+	transition: 0.75s;
+}
+
+a:hover{
+	font-family: "Gill Shadow";
+	background-color: red;
+	color: white;
+	transition: 0.75s;
+	border-radius: 50%;
+	width: 20%;
+	cursor: pointer;
+
+}
+
+a:active{
+	cursor:grab;
+	background-color: rgb(0, 0, 0);
+}
+
 .intro {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	background-color: rgb(0, 0, 0);
 	padding: 5vh;
 	color: white;
 }
 
 iframe {
 	flex-grow: 4;
+	width: 100%;
+	aspect-ratio: 16/9;
 	padding: 20px;
-	border: solid 10px;
-	border-color: white;
-	border-style:groove;
+	border: solid 1vh;
+	border-color: rgb(2, 1, 1);
 }
 
 .albumCovers{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	flex-direction: row;
+	flex-grow: 1;
+	flex-shrink: 1;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	border: red;
+	flex-wrap: none;
+	
+}
+
+img{
+	width: 100%;
+	padding: 2vh;
+	border: 0.5vh solid #000000;
+	transition: 0.5s;
+}
+
+img:hover{
+	padding:0vh;
+	border:0.5vh dashed red;
+	transition:0.5s;
+	cursor: pointer;
+}
+
+img:active{
+	cursor:grab;
+	background-color: #000000;
+}
+
+.artist{
+	width: inherit;
+	height: inherit;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.artist:hover{
+	width: inherit;
+	height: inherit;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width: 3000px){
+	.albumCovers{
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media(max-width:1000px){
+	.albumCovers{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media(max-width:700px){
+	.albumCovers{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+
+.moreAlbums{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
 }
 
-img{
-	width: 250px;
-	padding: 10px;
+#moreAlbums{
+	background-color: blue;
+	color: white;
+	width: 40%;
+	border-radius: 20%;
+	line-height: 200%;
 }
 
+#moreAlbums:hover{
+	background-color: aqua;
 
-
-
-
+}
 
 
 @font-face {
-	font-family: "Limkin";
-	src: url("assets/TMT-LimkinVF.ttf");
+	font-family: "Gill Shadow";
+	src: url("assets/gillsansstd-shadowed.ttf");
 }
 
 body {
-	font-family: "Limkin", serif;
+	font-family: "Gill Shadow", serif;
 	font-variation-settings: "wght" 500, "SRFF" 100;
 	background: white;
 	background-size: 100vw 100vh;
@@ -60,13 +164,24 @@ body {
 }
 
 h1 {
+	display: flex;
+	flex-direction: column;
 	margin: 20px;
+	color: red;
+	text-align: center;
+	align-items: center;
+	padding: 10px;
+	border-style: double none dashed;
+	font-size: 5dvh;
 }
 h2 {
 	margin: 20px;
+	color: red;
+	border-style: none none dashed;
 }
 p {
 	margin: 20px;
+
 }
 ul {
 	margin: 20px;
